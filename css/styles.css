@@ -227,13 +227,12 @@ aside a:hover {
 
 .top {
     display: block;
-    width: 25%;
     cursor: pointer;
     text-align: center;
     padding: 5px 5px;
     border: 2px solid black;
     border-radius: 6px;
-    margin-top: 20px;
+    margin: 2% 2% 0 2%;
     background: #5a9bd5;
     color: white;
 }
