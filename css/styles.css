@@ -1,0 +1,239 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #D7B520;
+    font-family: 'Roboto', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 16px;
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: 30% 1fr;
+    grid-template-areas:
+        "header header"
+        "aside section1"
+        "aside section2"
+        "aside section3"
+        "footer footer";
+    width: 80%;
+    background-color: #fff;
+    border: 2px solid #ddd;
+    padding: 10px;
+    margin: auto;
+    gap: 20px;
+}
+
+.fejléc,
+.menü,
+.balaton,
+.tisza-tó,
+.szelidi-tó,
+.lábléc {
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 3%;
+}
+
+.fejléc {
+    grid-area: header;
+    background-color: #e6e6e6;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.img-fejléc {
+    max-height: 100%;
+    max-width: 100%;
+    margin-bottom: 2rem;
+}
+
+.menü {
+    grid-area: aside;
+    background-color: #5a9bd5;
+}
+
+.balaton {
+    grid-area: section1;
+    background-color: #fbe5d7;
+    text-align: justify;
+    line-height: 1.8;
+}
+
+.tisza-tó {
+    grid-area: section2;
+    background-color: #fff2cd;
+    text-align: justify;
+    line-height: 1.8;
+}
+
+.szelidi-tó {
+    grid-area: section3;
+    background-color: #deeaf6;
+    text-align: justify;
+    line-height: 1.8;
+}
+
+.lábléc {
+    grid-area: footer;
+    background-color: #e6e6e6;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    font-style: italic;
+    margin: 3%;
+}
+
+.container section h2 {
+    font-size: 1.2em;
+}
+
+.img-tó {
+    float: right;
+    width: 50%;
+    margin: 2%;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+content::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    background-color: gray;
+    text-align: center;
+}
+
+aside a {
+    display: block;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 6px;
+    margin: 1rem 0 1rem 0;
+}
+
+aside p {
+    text-align: center;
+    color: white;
+    background-color: rgb(84, 81, 81);
+    padding: 0.8rem;
+    border: none;
+    border-radius: 6px;
+    margin-top: 3rem;
+}
+
+aside a:hover {
+    background-color: rgb(84, 81, 81);
+}
+
+.booking-form {
+    max-width: 500px;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.booking-form label,
+.booking-form legend {
+    font-weight: 500;
+}
+
+.booking-form input[type="text"],
+.booking-form input[type="email"],
+.booking-form input[type="tel"],
+.booking-form select,
+.booking-form textarea {
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.booking-form input:focus,
+.booking-form select:focus,
+.booking-form textarea:focus {
+    outline: none;
+    border-color: #007BFF;
+    box-shadow: 0 0 3px rgba(0, 123, 255, 0.5);
+}
+
+.booking-form fieldset {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 0.8rem;
+}
+
+.booking-form fieldset label {
+    display: block;
+    margin-bottom: 0.3rem;
+    font-weight: normal;
+}
+
+.booking-form button {
+    padding: 0.8rem;
+    border: none;
+    background-color: gray;
+    color: #fff;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.booking-form button:hover {
+    background-color: rgb(84, 81, 81);
+}
+
+@media (max-width: 960px) {
+    .container {
+    width: 95%;}
+}
+
+@media (max-width: 800px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "header"
+            "aside"
+            "section1"
+            "section2"
+            "section3"
+            "footer";
+    }
+}
+
+.top {
+    display: block;
+    width: 25%;
+    cursor: pointer;
+    text-align: center;
+    padding: 5px 5px;
+    border: 2px solid black;
+    border-radius: 6px;
+    margin-top: 20px;
+    background: #5a9bd5;
+    color: white;
+}
