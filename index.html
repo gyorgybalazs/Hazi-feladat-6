@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tóparti nyaralások szervezése | Pihenés vízparton – Waterworld Kft</title>
+    <meta name="description"
+        content="Szervezett tóparti nyaralások családoknak, pároknak és baráti társaságoknak. Kényelmes szállások, vízparti programok, felejthetetlen élmények. Foglalj most!">
+    <meta name="keywords"
+        content="tóparti nyaralás, vízparti pihenés, nyaralás tónál, családi nyaralás, romantikus pihenés, nyaralásszervezés">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="fejléc" id="fejléc">
+            <img class="img-fejléc" src="img/header-img.jpg" alt="Strand" title="Strand">
+            <h1>Tóparti nyaralások</h1>
+        </header>
+        <aside class="menü">
+            <p>Infó a helyszínekről:</p>
+            <a href="#balaton">Balaton</a>
+            <a href="#tisza-tó">Tisza tó</a>
+            <a href="#szelidi-tó">Szelidi tó</a>
+            <p>Töltsd ki a jelentkezési űrlapot:</p>
+            <form class="booking-form">
+                <label for="name">Név</label>
+                <input type="text" id="name" name="name" placeholder="Írd be a neved" required
+                    title="Vezetéknév + Keresztnév">
+
+                <label for="email">E-mail cím</label>
+                <input type="email" id="email" name="email" placeholder="Írd be az e-mail címed" required>
+
+                <label for="phone">Telefonszám</label>
+                <input type="tel" id="phone" name="phone" placeholder="Pl.: +36 30 123 4567" required>
+
+                <label for="lake">Melyik tó érdekel?</label>
+                <select id="lake" name="lake">
+                    <option value="balaton">Balaton</option>
+                    <option value="tisza-to">Tisza-tó</option>
+                    <option value="szelidi-to">Szelidi-tó</option>
+                </select>
+
+                <fieldset>
+                    <legend>Milyen szállást keresel?</legend>
+                    <label><input type="checkbox" name="accommodation" value="szalloda" title="3 csillagos">
+                        Szálloda</label>
+                    <label><input type="checkbox" name="accommodation" value="apartmanhaz" title="Teljesen felszerelt">
+                        Apartmanház</label>
+                    <label><input type="checkbox" name="accommodation" value="kemping"
+                            title="Bolt és étterem helyben van"> Kemping</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Milyen ellátás legyen?</legend>
+                    <label><input type="radio" name="meal" value="teljes" required
+                            title="Alkoholmentes ital is benne van"> Teljes</label>
+                    <label><input type="radio" name="meal" value="felpanzio" title="Reggeli és vacsora">
+                        Félpanzió</label>
+                    <label><input type="radio" name="meal" value="reggeli" title="Svédasztalos reggeli"> Csak
+                        reggeli</label>
+                    <label><input type="radio" name="meal" value="nincs" title="a helyszínen módosítható"> Nem kérek
+                        ellátást</label>
+                </fieldset>
+
+                <label for="message">Egyéb üzenet</label>
+                <textarea id="message" name="message" rows="5" placeholder="Ide írhatod az üzeneted"></textarea>
+
+                <button type="submit">Mehet</button>
+            </form>
+        </aside>
+        <section class="balaton" id="balaton">
+            <h2>
+                Balaton - strandolás nagyüzemben
+            </h2>
+            <img class="img-tó" src="img/balaton.jpg" alt="Balaton" title="Balaton">
+            <p>
+                A Balaton Magyarország legnépszerűbb nyári úti célja, ahol rengeteg kiépített strand várja a fürdőzőket.
+                A tó vize nyáron gyorsan felmelegszik, ezért kisgyerekes családoknak is ideális, főleg az északi part
+                lankásabb részein. Szinte minden településen találsz fizetős és szabadstrandot is, eltérő
+                szolgáltatásokkal és zsúfoltsággal. A legtöbb strandon van büfé, mosdó, öltöző, napágy- és
+                vízibicikli-kölcsönzés. A vízminőség általában jó, a part sok helyen füves vagy homokosított. A Balaton
+                nagy előnye a programkínálat: strandröplabda, csúszdák, animáció, esti programok. Ugyanakkor főszezonban
+                sok helyen tömeg és zaj fogad, ami nem mindenkinek jön be. A népszerű strandokon a parkolás és a belépő
+                is drágább lehet. Ha szereted az élettel teli, pezsgő strandhangulatot, a Balaton verhetetlen választás.
+            </p>
+            <p class="top">
+                <a href="#fejléc">Fel az oldal tetejére</a>
+            </p>
+
+        </section>
+        <section class="tisza-tó" id="tisza-tó">
+            <h2>
+                Tisza-tó - természetközeli fürdés
+            </h2>
+            <img class="img-tó" src="img/tisza.jpg" alt="Tiszató" title="Tiszató">
+            <p>
+                A Tisza-tó strandjai általában csendesebbek és kevésbé zsúfoltak, mint a balatoniak. A víz itt is
+                sekélyebb részekkel indul, így gyerekekkel is biztonságosabb a pancsolás sok helyen. Több településen
+                jól kiépített, rendezett strandok vannak, de a hangulat családiasabb és nyugodtabb. A vízminőség jó, a
+                természet közelsége miatt sokszor madarak és zöld területek veszik körül a partszakaszokat. A
+                strandolást könnyű összekötni bringázással vagy csónakázással, ami extra élményt ad a naphoz. A
+                szolgáltatások általában egyszerűbbek, kevesebb a csúszda és a „strandshow”. Cserébe kevesebb a zaj és a
+                tömeg, könnyebb leteríteni a pokrócot egy árnyékos fa alá. Az árak barátságosabbak, mint a Balatonnál.
+                Ha inkább a nyugodt, természetes fürdőzést keresed, a Tisza-tó nagyon jó alternatíva.
+            </p>
+            <p class="top">
+                <a href="#fejléc">Fel az oldal tetejére</a>
+            </p>
+        </section>
+        <section class="szelidi-tó" id="szelidi-tó">
+            <h2>
+                Szelidi-tó - kicsi, családias, retró strandhangulat
+            </h2>
+            <img class="img-tó" src="img/szelidi.jpg" alt="Szeliditó" title="Szeliditó">
+            <p>
+                A Szelidi-tó egy kisebb, sokkal intimebb hangulatú fürdőhely, mint a nagy tavak. A strandolás itt inkább
+                pihentető, mint pezsgő: nincs tömeg, nincs hangos nyüzsgés. A víz sekély és gyorsan melegszik, ezért
+                gyerekekkel kifejezetten kellemes. A strandok egyszerűbbek, de tiszták és rendezettek, sok helyen füves
+                parttal. Büfék és alap szolgáltatások vannak, de nem a „fesztiválstrand” élményre kell számítani. A tó
+                környéke nyugodt, vidéki hangulatú, sokan kifejezetten ezért választják. Árnyékos helyet is könnyebb
+                találni, nem kell hajnalban érkezni egy jó placcért. A víz általában tiszta, fürdésre alkalmas, a
+                hangulat pedig kicsit retrós, nosztalgikus. Ha csendes, olcsóbb, nyugodt strandolást szeretnél, a
+                Szelidi-tó tökéletes választás.
+            </p>
+            <p class="top">
+                <a href="#fejléc">Fel az oldal tetejére</a>
+            </p>
+        </section>
+        <footer class="lábléc">
+            Waterworld Kft - Minden jog fenntartva
+        </footer>
+    </div>
+</body>
+
+</html>
